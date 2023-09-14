@@ -1,0 +1,27 @@
+{
+  "name": "go-game-move-processor",
+  "version": "0.0.2",
+  "type": "module",
+  "main": "./dist/go-game-move-processor.umd.cjs",
+  "module": "./dist/go-game-move-processor.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/go-game-move-processor.js",
+      "require": "./dist/go-game-move-processor.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "go-game-move-processor": "file:.yalc/go-game-move-processor"
+  },
+  "yalcSig": "c723ba766eea3ce66462021bc1b07d73"
+}

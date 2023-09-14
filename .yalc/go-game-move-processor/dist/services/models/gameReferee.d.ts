@@ -1,0 +1,14 @@
+import { StoneGroup } from "./stoneGroup";
+import { StonePlay } from "./stonePlay";
+import { Submission } from "./submission";
+import { BaseSubmissionResult } from "./submissionResult";
+export declare function evaluateSubmission(submission: Submission): BaseSubmissionResult;
+export declare function cloneBoard(boardIn: string[][]): string[][];
+export declare function applySubmittedPlayToWorkBoard(submission: Submission, stringBoard: string[][]): void;
+export declare function getGroupsByStoneColor(groups: StoneGroup[], stoneColor: string): StoneGroup[];
+export declare function getDeadGroups(groups: StoneGroup[]): StoneGroup[];
+export declare function getLiveGroups(groups: StoneGroup[]): StoneGroup[];
+export declare function getGroupsWithOneLiberty(groups: StoneGroup[]): StoneGroup[];
+export declare function removeDeadStones(stringBoard: string[][], deadGroups: StoneGroup[]): number;
+export declare function checkIsKo(newBoard: string[][], koCompareBoard: string[][]): boolean;
+export declare function checkIsCollision(currentBoard: string[][], stonePlay: StonePlay): boolean;
